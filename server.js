@@ -45,7 +45,9 @@ chokidar.watch(excelFilePath).on('change', () => {
 });
 
 // بدء الخادم
-const PORT = process.env.PORT || 4000;
-server.listen(PORT, () => {
-    console.log(`الخادم يعمل على http://localhost:${PORT}`);
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
+
